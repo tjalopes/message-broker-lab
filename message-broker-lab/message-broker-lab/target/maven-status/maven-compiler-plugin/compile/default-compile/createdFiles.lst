@@ -1,12 +1,11 @@
+com\messagebrokers\message_broker_lab\application\services\kafka\KafkaConsumerService.class
 com\messagebrokers\message_broker_lab\application\settings\KafkaAttributes.class
 com\messagebrokers\message_broker_lab\application\services\kafka\KafkaProducerService.class
 com\messagebrokers\message_broker_lab\presentation\controllers\v1\KafkaController.class
+com\messagebrokers\message_broker_lab\application\dtos\requests\TopicTwoRequest.class
 com\messagebrokers\message_broker_lab\domain\interfaces\KafkaGateway.class
 com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\KafkaGatewayImpl.class
-com\messagebrokers\message_broker_lab\MessageBrokerLabApplication.class
-com\messagebrokers\message_broker_lab\application\services\kafka\KafkaConsumerService.class
-com\messagebrokers\message_broker_lab\application\dtos\requests\TopicTwoRequest.class
-com\messagebrokers\message_broker_lab\infrastructure\kafka\KafkaTopicConfig.class
 com\messagebrokers\message_broker_lab\application\settings\KafkaTopics.class
+com\messagebrokers\message_broker_lab\MessageBrokerLabApplication.class
 com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\dtos\requests\TestTopicTwoRequest.class
 com\messagebrokers\message_broker_lab\application\dtos\requests\TopicOneRequest.class

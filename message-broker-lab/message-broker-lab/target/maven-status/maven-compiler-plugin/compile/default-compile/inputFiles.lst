@@ -7,6 +7,5 @@ C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message
 C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\domain\interfaces\KafkaGateway.java
 C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\dtos\requests\TestTopicTwoRequest.java
 C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\KafkaGatewayImpl.java
-C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\kafka\KafkaTopicConfig.java
 C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\MessageBrokerLabApplication.java
 C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\presentation\controllers\v1\KafkaController.java

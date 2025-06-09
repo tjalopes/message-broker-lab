@@ -1,5 +1,5 @@
-# Created at 2025-06-09T13:08:19.922
-Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
+# Created at 2025-06-09T15:11:02.647
+Thread dump for process (19772@dev52) after 30 seconds shutdown timeout:
 "main" 
    java.lang.Thread.State: WAITING
         at java.base@21.0.1/java.lang.Object.wait0(Native Method)
@@ -97,6 +97,19 @@ Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@21.0.1/java.lang.Thread.runWith(Thread.java:1596)
+        at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
+
+"kafka-producer-network-thread | message-broker-lab-producer-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@21.0.1/java.lang.Thread.sleep0(Native Method)
+        at java.base@21.0.1/java.lang.Thread.sleep(Thread.java:509)
+        at app//org.apache.kafka.common.utils.Utils.sleep(Utils.java:387)
+        at app//org.apache.kafka.common.utils.SystemTime.sleep(SystemTime.java:46)
+        at app//org.apache.kafka.clients.producer.internals.Sender.maybeFindCoordinatorAndRetry(Sender.java:531)
+        at app//org.apache.kafka.clients.producer.internals.Sender.maybeSendAndPollTransactionalRequest(Sender.java:492)
+        at app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:337)
+        at app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
         at java.base@21.0.1/java.lang.Thread.runWith(Thread.java:1596)
         at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
 
@@ -401,19 +414,6 @@ Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
         at java.base@21.0.1/java.lang.Thread.runWith(Thread.java:1596)
         at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
 
-"kafka-producer-network-thread | message-broker-lab-producer-1" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@21.0.1/java.lang.Thread.sleep0(Native Method)
-        at java.base@21.0.1/java.lang.Thread.sleep(Thread.java:509)
-        at app//org.apache.kafka.common.utils.Utils.sleep(Utils.java:387)
-        at app//org.apache.kafka.common.utils.SystemTime.sleep(SystemTime.java:46)
-        at app//org.apache.kafka.clients.producer.internals.Sender.maybeFindCoordinatorAndRetry(Sender.java:531)
-        at app//org.apache.kafka.clients.producer.internals.Sender.maybeSendAndPollTransactionalRequest(Sender.java:521)
-        at app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:337)
-        at app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:264)
-        at java.base@21.0.1/java.lang.Thread.runWith(Thread.java:1596)
-        at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
-
 "rabbitmq-stream-environment-scheduler-0" 
    java.lang.Thread.State: WAITING
         at java.base@21.0.1/jdk.internal.misc.Unsafe.park(Native Method)
@@ -554,14 +554,14 @@ Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
         at app//org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:120)
         at app//org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:463)
         at app//org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:618)
-        at app//org.springframework.context.support.DefaultLifecycleProcessor$$Lambda/0x000001d91fb8b198.accept(Unknown Source)
+        at app//org.springframework.context.support.DefaultLifecycleProcessor$$Lambda/0x0000027447bcd670.accept(Unknown Source)
         at java.base@21.0.1/java.lang.Iterable.forEach(Iterable.java:75)
         at app//org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:432)
         at app//org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:323)
         at app//org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1172)
         at app//org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
         at app//org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
-        at app//org.springframework.boot.SpringApplicationShutdownHook$$Lambda/0x000001d91fb8a8a0.accept(Unknown Source)
+        at app//org.springframework.boot.SpringApplicationShutdownHook$$Lambda/0x0000027447bccd78.accept(Unknown Source)
         at java.base@21.0.1/java.lang.Iterable.forEach(Iterable.java:75)
         at app//org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
         at java.base@21.0.1/java.lang.Thread.runWith(Thread.java:1596)
@@ -584,14 +584,11 @@ Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
         at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
 
 "rabbitmq-stream-environment-scheduler-2" 
-   java.lang.Thread.State: WAITING
+   java.lang.Thread.State: TIMED_WAITING
         at java.base@21.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@21.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
-        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
-        at java.base@21.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
-        at java.base@21.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
-        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
-        at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+        at java.base@21.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+        at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
         at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
@@ -760,11 +757,14 @@ Thread dump for process (27124@dev52) after 30 seconds shutdown timeout:
         at java.base@21.0.1/java.lang.Thread.run(Thread.java:1583)
 
 "rabbitmq-stream-environment-scheduler-13" 
-   java.lang.Thread.State: TIMED_WAITING
+   java.lang.Thread.State: WAITING
         at java.base@21.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@21.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
-        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
-        at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@21.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        at java.base@21.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        at java.base@21.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        at java.base@21.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+        at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
         at java.base@21.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
         at java.base@21.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
