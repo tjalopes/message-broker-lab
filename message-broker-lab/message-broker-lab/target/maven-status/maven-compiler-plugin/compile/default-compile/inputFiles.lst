@@ -1,0 +1,12 @@
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\dtos\requests\TopicOneRequest.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\dtos\requests\TopicTwoRequest.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\services\kafka\KafkaConsumerService.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\services\kafka\KafkaProducerService.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\settings\KafkaAttributes.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\application\settings\KafkaTopics.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\domain\interfaces\KafkaGateway.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\dtos\requests\TestTopicTwoRequest.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\gateways\kafka\KafkaGatewayImpl.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\infrastructure\kafka\KafkaTopicConfig.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\MessageBrokerLabApplication.java
+C:\Users\tlopes\Documents\Projects\message-broker-lab\message-broker-lab\message-broker-lab\src\main\java\com\messagebrokers\message_broker_lab\presentation\controllers\v1\KafkaController.java

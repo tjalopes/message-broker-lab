@@ -8,6 +8,7 @@ class MessageBrokerLabApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// no tests yet
 	}
 
 }

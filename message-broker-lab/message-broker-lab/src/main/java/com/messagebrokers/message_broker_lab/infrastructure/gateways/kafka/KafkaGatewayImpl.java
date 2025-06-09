@@ -2,9 +2,11 @@ package com.messagebrokers.message_broker_lab.infrastructure.gateways.kafka;
 
 import com.messagebrokers.message_broker_lab.application.settings.KafkaTopics;
 import com.messagebrokers.message_broker_lab.domain.interfaces.KafkaGateway;
-import com.messagebrokers.message_broker_lab.infrastructure.gateways.kafka.dtos.requests.TestTopicTwoRequest;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
+import java.util.Map;
+
+import java.util.HashMap;
 
 @Component
 public class KafkaGatewayImpl implements KafkaGateway {
@@ -15,13 +17,21 @@ public class KafkaGatewayImpl implements KafkaGateway {
     }
 
     @Override
-    public void testTopicOne(String message) {
-        kafkaTemplate.send(KafkaTopics.TOPIC_ONE, message);
+    public void testTopicOne(String attributeOne) {
+
+        Map<String, String> payload = new HashMap<>();
+        payload.put("attributeOne", attributeOne);
+
+        kafkaTemplate.send(KafkaTopics.TOPIC_ONE, payload);
     }
 
     @Override
     public void testTopicTwo(String attributeOne, String attributeTwo) {
-        var request = new TestTopicTwoRequest(attributeOne, attributeTwo);
-        kafkaTemplate.send(KafkaTopics.TOPIC_TWO, request);
+
+        Map<String, String> payload = new HashMap<>();
+        payload.put("attributeOne", attributeOne);
+        payload.put("attributeTwo", attributeTwo);
+
+        kafkaTemplate.send(KafkaTopics.TOPIC_TWO, payload);
     }
 }

@@ -1,4 +1,4 @@
-package com.messagebrokers.message_broker_lab.application.services;
+package com.messagebrokers.message_broker_lab.application.services.kafka;
 
 import com.messagebrokers.message_broker_lab.application.dtos.requests.TopicOneRequest;
 import com.messagebrokers.message_broker_lab.application.dtos.requests.TopicTwoRequest;
@@ -6,11 +6,11 @@ import com.messagebrokers.message_broker_lab.domain.interfaces.KafkaGateway;
 import org.springframework.stereotype.Service;
 
 @Service
-public class KafkaService {
+public class KafkaProducerService {
 
     private final KafkaGateway kafkaGateway;
 
-    public KafkaService(KafkaGateway kafkaGateway) {
+    public KafkaProducerService(KafkaGateway kafkaGateway) {
         this.kafkaGateway = kafkaGateway;
     }
 
@@ -19,6 +19,7 @@ public class KafkaService {
     }
 
     public void testTopicTwo(TopicTwoRequest topicTwoRequest) {
-        kafkaGateway.testTopicTwo(topicTwoRequest.attributeOne(), topicTwoRequest.attributeTwo());
+        kafkaGateway.testTopicTwo(topicTwoRequest.attributeOne(),
+                topicTwoRequest.attributeTwo());
     }
 }

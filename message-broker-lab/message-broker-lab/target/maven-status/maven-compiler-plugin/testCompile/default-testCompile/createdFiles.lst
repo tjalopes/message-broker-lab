@@ -1,0 +1,3 @@
+com\messagebrokers\message_broker_lab\kafka\integration\KafkaIntegrationTest.class
+com\messagebrokers\message_broker_lab\kafka\KafkaConnectionTest.class
+com\messagebrokers\message_broker_lab\MessageBrokerLabApplicationTests.class
